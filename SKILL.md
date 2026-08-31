@@ -38,16 +38,13 @@ When schemas or data formats are the main input, include field semantics, requir
 
 ## Output
 
-Produce an agent-agnostic skill. Do not assume a specific agent, model, vendor, client, proprietary tool name, or vendor-specific directory layout. Use generic capability-based instructions such as "search the source files" or "run the validation command" unless the source or user explicitly requires a particular environment.
-
-Follow the Agent Skills specification at <https://skill.md>. Treat specification compliance and cross-agent portability as required output properties, not optional style preferences. When an environment-specific dependency is essential, state it explicitly and isolate it from the portable workflow; use the specification's `compatibility` field when appropriate.
+Produce an agent-agnostic skill. Follow the Agent Skills specification at <https://skill.md>. Treat specification compliance and cross-agent portability as required output properties, not optional style preferences. When an environment-specific dependency is essential, state it explicitly and isolate it from the portable workflow; use the specification's `compatibility` field when appropriate.
 
 Prefer flat `SKILL.md` files over multi-file skills unless the complexity of the source material justifies it.
 
 The compiled skill should be:
 
 - Portable across skill-compatible agents
-- Free of accidental vendor, model, client, and tool-runtime coupling
 - Self-contained enough to be useful after activation
 - Specific enough to change agent behavior
 - Short enough to avoid wasting context

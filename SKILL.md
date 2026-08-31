@@ -7,15 +7,7 @@ description: Compile an agent-optimized SKILL.md from source material in a src d
 
 Compile source material into a concise, portable `SKILL.md` that follows the [Agent Skills specification](https://skill.md) and is optimized for any compatible agent to use after activation.
 
-## Output Contract
-
-Produce an agent-agnostic skill. Do not assume a specific agent, model, vendor, client, proprietary tool name, or vendor-specific directory layout. Use generic capability-based instructions such as "search the source files" or "run the validation command" unless the source or user explicitly requires a particular environment.
-
-Follow the Agent Skills specification at <https://skill.md>. Treat specification compliance and cross-agent portability as required output properties, not optional style preferences. When an environment-specific dependency is essential, state it explicitly and isolate it from the portable workflow; use the specification's `compatibility` field when appropriate.
-
-## Inputs
-
-Use `src/` in the current skill directory as the default source directory. If the user provides another source path, use that path instead. If no source directory exists and no path is provided, ask for the source location.
+## Input
 
 Treat source material as authoritative when it includes:
 
@@ -26,6 +18,14 @@ Treat source material as authoritative when it includes:
 - Existing skill drafts, README files, or product documentation
 
 Ignore generated dependencies, build outputs, lockfile noise, vendored code, caches, binary blobs, and unrelated project metadata unless the source material explicitly depends on them.
+
+## Output
+
+Produce an agent-agnostic skill. Do not assume a specific agent, model, vendor, client, proprietary tool name, or vendor-specific directory layout. Use generic capability-based instructions such as "search the source files" or "run the validation command" unless the source or user explicitly requires a particular environment.
+
+Follow the Agent Skills specification at <https://skill.md>. Treat specification compliance and cross-agent portability as required output properties, not optional style preferences. When an environment-specific dependency is essential, state it explicitly and isolate it from the portable workflow; use the specification's `compatibility` field when appropriate.
+
+Prefer flat `SKILL.md` files over multi-file skills unless the complexity of the source material justifies it.
 
 ## Workflow
 

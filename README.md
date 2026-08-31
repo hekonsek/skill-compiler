@@ -10,7 +10,7 @@ This skill turns human-friendly and project-specific source material into reusab
 - Instructions, runbooks, and policies
 - Source code, tests, examples, and configuration
 - Schemas, fixtures, and API contracts
-- Existing skill drafts and project documentation
+- Project documentation
 
 ## Supported agents
 

@@ -15,7 +15,7 @@ Treat source material as authoritative when it includes:
 - Human-facing instructions, runbooks, checklists, and policies
 - Source code, tests, examples, snippets, and configuration
 - Data format descriptions, schemas, fixtures, and API contracts
-- Existing skill drafts, README files, or product documentation
+- Existing README files, or product documentation
 
 Ignore generated dependencies, build outputs, lockfile noise, vendored code, caches, binary blobs, and unrelated project metadata unless the source material explicitly depends on them.
 

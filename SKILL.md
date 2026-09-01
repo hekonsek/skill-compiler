@@ -40,8 +40,6 @@ When schemas or data formats are the main input, include field semantics, requir
 
 Produce an agent-agnostic skill. Follow the Agent Skills specification at <https://skill.md>. Treat specification compliance and cross-agent portability as required output properties, not optional style preferences. When an environment-specific dependency is essential, state it explicitly and isolate it from the portable workflow; use the specification's `compatibility` field when appropriate.
 
-Prefer flat `SKILL.md` files over multi-file skills unless the complexity of the source material justifies it.
-
 The compiled skill should be:
 
 - Portable across skill-compatible agents
